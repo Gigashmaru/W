@@ -1,0 +1,1194 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Orbitron", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.88) 50%,
+    rgba(87, 184, 255, 1) 50%
+  );
+}
+
+:root {
+  --bg-dark: rgba(0, 0, 0, 0.88);
+  --bg-blue: rgba(87, 184, 255, 1);
+  --text-white: rgba(255, 255, 255, 1);
+  --text-yellow: rgba(250, 196, 34, 1);
+  --text-grey: rgba(153, 153, 153, 1);
+}
+
+header {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.88) 50%,
+    rgba(87, 184, 255, 1) 50%
+  );
+  padding: 20px 0px;
+}
+
+/* .dark header {
+  background-image: linear-gradient(
+    to right,
+    rgba(87, 184, 255, 1) 50%,
+    rgba(0, 0, 0, 0.88) 50%
+  );
+  padding: 20px 0px;
+} */
+
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-white);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+#hamburger {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 60px;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.nav-menu__link {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  transition: 0.5s;
+}
+
+.nav-menu__link:hover {
+  color: rgba(250, 196, 34, 1);
+}
+
+.nav-btn__link {
+  border: 1px solid var(--text-white);
+  padding: 16px 31px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+
+/* text-games */
+.text-games {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.88) 50%,
+    rgba(87, 184, 255, 1) 50%
+  );
+  padding: 200px 0;
+}
+
+.text-game {
+  display: flex;
+}
+
+.text-fire {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fire-span {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: var(--bg-blue);
+}
+
+.text-h2 {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 86px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: var(--text-white);
+  padding: 14px 0 45px;
+}
+
+.text-relative {
+  position: relative;
+}
+
+.text-absolute {
+  position: absolute;
+  left: 0;
+}
+
+.text-p {
+  width: 615px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: var(--text-grey);
+  padding-bottom: 53px;
+}
+
+.text-btn {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.text-btn1 {
+  padding: 21px 34px;
+  background-color: var(--bg-blue);
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+
+.text-btn2 {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+
+.containere {
+  background-color: var(--text-yellow);
+  justify-items: center;
+  padding: 128px 0 129.58px;
+}
+
+.spons {
+  max-width: 1360px;
+  justify-content: center;
+}
+
+.our {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+  display: flex;
+  position: relative;
+}
+
+.bro {
+  display: flex;
+  flex-wrap: wrap;
+  display: block;
+  padding: 27px;
+  justify-items: center;
+}
+
+.absolute {
+  top: 63px;
+  right: 0px;
+  position: absolute;
+}
+
+.spon-text {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 576px;
+  height: 52;
+  opacity: 1;
+  top: 100px;
+  left: 10px;
+  margin: 0 auto;
+  padding-bottom: 44px;
+}
+
+.images {
+  display: flex;
+  gap: 32px;
+}
+
+.conti {
+  max-width: 1360px;
+  background-color: var(--bg-dark);
+  padding: 130px 60px 129.58px;
+  margin: 0 auto;
+  background-image: url(../images/fort.svg);
+  background-repeat: no-repeat;
+  height: 1072px;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+
+  /* background-image: url(../images/fort.svg);
+  background-repeat: no-repeat; */
+}
+
+.back-text {
+  color: var(--bg-blue);
+}
+
+.spon-h1 {
+  width: 1016px;
+  height: 148;
+  opacity: 1;
+  top: 43.58px;
+  left: 27px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 11.58px 27px 39px;
+  margin: 0 auto;
+  color: var(--text-white);
+}
+
+.spont-text {
+  padding-bottom: 63.58px;
+}
+
+.spon-p {
+  width: 698px;
+  height: 64;
+  opacity: 1;
+  top: 230.58px;
+  left: 36px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--text-grey);
+  margin: 0 auto;
+}
+
+.pla {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: var(--text-white);
+  background: no-repeat -1px url(../images/logox.svg);
+  padding-left: 50px;
+}
+
+.logo-menu {
+  display: flex;
+  gap: 35px;
+}
+
+.play {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: var(--text-grey);
+  width: 515.2824096679688px;
+  height: 84;
+  opacity: 1;
+  top: 60.58px;
+}
+
+.logo-menu-lkn {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 35px 38px 34px 67px;
+  border-radius: 20px;
+  margin-bottom: 32px;
+  transition: 0.7s;
+}
+baik .logo-menu-lkn:hover {
+  padding: 55px;
+}
+
+.disp {
+  gap: 35px;
+}
+
+.video-menu {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 86px 60px;
+  background-color: black;
+}
+
+.video {
+  display: flex;
+}
+
+.img-fi {
+  display: flex;
+  text-align: center;
+}
+
+.text-fire {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: var(--bg-blue);
+}
+
+.new {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 66px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: var(--text-white);
+  margin-top: 11px;
+  padding-right: 20px;
+  width: 684px;
+  height: 148px;
+  opacity: 1;
+  top: 43.58px;
+}
+
+.sed {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0%;
+  color: var(--text-grey);
+  padding: 38px 0 54px;
+}
+
+.imu {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.imu-menu {
+  display: flex;
+  background-color: black;
+  position: relative;
+}
+
+.backtop {
+  width: 454px;
+  height: 700px;
+  background-image: url(../images/for.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
+.backtop-text {
+  padding: 272px 65px 273px;
+  display: flex;
+  flex-direction: column;
+}
+
+.eye {
+  width: 128px;
+  margin: 0 auto;
+}
+
+.backtop-p {
+  width: 336px;
+  height: 58;
+  opacity: 1;
+  top: 126.39px;
+  left: 72px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--text-white);
+}
+
+.mult-bro {
+  width: 454px;
+  height: 700px;
+  background-image: url(../images/fir.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
+.baik {
+  display: flex;
+  flex-direction: column;
+  padding: 272px 65px 273px;
+}
+
+.pad {
+  width: 128px;
+  margin: 0 auto;
+}
+
+.multi {
+  width: 336px;
+  height: 58;
+  opacity: 1;
+  top: 126.39px;
+  left: 72px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--text-white);
+}
+
+.open {
+  width: 454px;
+  height: 700px;
+  background-image: url(../images/fon.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
+.compas {
+  width: 128px;
+  margin: 0 auto;
+}
+
+.open-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 272px 65px 273px;
+}
+
+.comp {
+  color: var(--text-white);
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.game-icon {
+  background-color: black;
+  padding-top: 75px;
+  border: 1px solid var(--bg-dark);
+}
+
+.game-brand {
+  display: flex;
+  align-items: center;
+}
+
+.spi {
+  color: var(--bg-blue);
+}
+
+.brand-text {
+  color: var(--text-white);
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  margin-top: 12.39px;
+}
+
+.rea {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  padding: 21px 34px;
+  background-color: var(--bg-blue);
+}
+
+.brand-a {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: var(--text-white);
+  justify-content: space-between;
+}
+
+.brand-a {
+  display: flex;
+}
+
+.apr {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: var(--bg-blue);
+  padding-top: 54px;
+}
+
+.er {
+  padding-top: 28px;
+  width: 607px;
+  height: 92;
+  opacity: 1;
+  top: 610.39px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: var(--text-white);
+}
+
+.apr1 {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  color: var(--bg-blue);
+  padding-top: 30px;
+}
+
+.group {
+  width: 281px;
+  height: 68;
+  opacity: 1;
+  top: 255.39px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: var(--text-white);
+  padding-top: 20px;
+}
+
+.two {
+  margin-left: 24px;
+}
+
+.game-icon-base {
+  padding-top: 64px;
+  display: flex;
+}
+
+.two1 {
+  margin-top: 40px;
+}
+
+.containerio {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.two3 {
+  margin-left: 24px;
+}
+
+.two4 {
+  margin-top: 37px;
+}
+
+.containerioi {
+  max-width: 1360px;
+  max-height: 683px;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-image: url(../images/back.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 180px;
+}
+
+.piva {
+  padding-top: 126px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 82px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 746px;
+  height: 164;
+  opacity: 1;
+  top: -3.61px;
+  left: 50.5px;
+  margin: 0 auto;
+}
+
+.lib {
+  margin-bottom: 60px;
+  margin-left: 450px;
+}
+
+.zavod-piva {
+  width: 718px;
+  height: 28;
+  opacity: 1;
+  top: 211.39px;
+  left: 64.5px;
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0 auto;
+  color: rgba(85, 85, 85, 1);
+}
+
+.zavod-piva2 {
+  font-family: Orbitron;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 846px;
+  height: 56;
+  opacity: 1;
+  top: 242.39px;
+  left: 0.5px;
+  margin: 0 auto;
+  color: rgba(85, 85, 85, 1);
+}
+
+.input {
+  padding-top: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inp {
+  width: 445px;
+  height: 50px;
+  border: none;
+  padding: 20px;
+}
+
+.inp:hover {
+  border: 1px solid var(--bg-blue);
+}
+
+.sub {
+  background-color: var(--bg-blue);
+  padding: 15px 7px;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-brand {
+    width: 100%;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    padding: 20px 0;
+    display: none;
+  }
+
+  .active {
+    display: flex;
+  }
+}
+
+@media (max-width: 550px) {
+  .nav-menu {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .spon-h1 {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .text-game {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .text-p {
+    width: 100%;
+  }
+  .text-absolute {
+    bottom: -10px;
+  }
+  .logo-menu-lkn {
+    padding: 12px 4px 8px 60px;
+  }
+  .game-icon-base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1360px) {
+  .logo-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    display: block;
+    max-height: 100%;
+  }
+  .spon-h1 {
+    width: 647px;
+    font-size: 38px;
+    line-height: 38px;
+  }
+  .spon-p {
+    width: 613px;
+    font-size: 15px;
+    line-height: 14px;
+  }
+  .logo-menu-lkn {
+    padding: 12px 4px 8px 60px;
+  }
+  .video {
+    flex-direction: column;
+  }
+  .vi {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 1330px) {
+  .spons {
+    justify-items: center;
+    flex-direction: column;
+  }
+  .images {
+    gap: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 660px) {
+  .gamep {
+    width: 393px;
+  }
+  .er {
+    font-size: 26px;
+    line-height: 46px;
+    margin: 0 auto;
+    width: 258px;
+    font-size: 16px;
+  }
+  .brand-a {
+    display: flex;
+    flex-direction: column;
+  }
+  .brandtext {
+    text-align: center;
+  }
+  .game-brand {
+    justify-content: center;
+  }
+  .apr {
+    font-size: 16px;
+    line-height: 1px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .spon-text {
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    width: 200px;
+  }
+  .images {
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 429px) {
+  .absolute {
+    top: 59px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 430px) {
+  .absolute {
+    top: 118px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+  .text-h2 {
+    font-size: 51px;
+    line-height: 60px;
+  }
+  .text-absolute {
+    /* top: 0; */
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .text-games {
+    padding: 50px 0;
+  }
+  .game img {
+    width: 100%;
+  }
+  .spon-p {
+    width: 390px;
+    font-size: 11px;
+    line-height: 10px;
+  }
+  .spon-h1 {
+    width: 477px;
+    font-size: 27px;
+    line-height: 30px;
+  }
+
+  .pla {
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  .play {
+    width: 337.28241px;
+    font-size: 13px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 750px) {
+  .new {
+    width: 575px;
+    height: 110px;
+    font-size: 40px;
+    line-height: 62px;
+  }
+  .vi {
+    width: 300px;
+    height: 230px;
+  }
+}
+
+@media (max-width: 600px) {
+  .new {
+    width: 365px;
+    height: 150px;
+    font-size: 33px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .nav-menu {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .spon-h1 {
+    width: 315px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .spon-p {
+    width: 275px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .play {
+    width: 195.28241px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .logo-menu-lkn {
+    padding: 8px 2px 7px 37px;
+  }
+  .zavod-piva {
+    width: 427px;
+    font-size: 10px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-menu-lkn {
+    padding: 1px 2px 2px 31px;
+  }
+}
+
+@media (max-width: 450px) {
+  .text-h2 {
+    font-size: 35px;
+    line-height: 40px;
+    padding: 10px 0 30px;
+  }
+  .text-p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .text-btn {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .vi {
+    width: 100%;
+    height: 100%;
+  }
+  .new {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .spon-h1 {
+    width: 275px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .imu-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 970px) {
+  .pivi {
+    font-size: 58px;
+    line-height: 69px;
+    width: 675px;
+    margin: 0 auto;
+  }
+  .lib {
+    width: 434px;
+    margin: 0 auto;
+    top: 0;
+  }
+  .zavod-piva {
+    width: 621px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  ..zavod-piva2 {
+    width: 658px;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .zavod-piva2 {
+    width: 386px;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+  }
+  .pivi {
+    font-size: 39px;
+    line-height: 47px;
+    width: 480px;
+    margin: 0 auto;
+  }
+  .zavod-piva {
+    width: 546px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 540px) {
+  .zavod-piva {
+    width: 342px;
+    font-size: 8px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 390px) {
+  .zavod-piva2 {
+    width: 335px;
+    font-size: 7px;
+    line-height: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 740px) {
+  .pivi {
+    font-size: 27px;
+    line-height: 34px;
+    width: 302px;
+    margin: 0 auto;
+  }
+  .lib {
+    width: 260px;
+    margin: 0 auto;
+    top: 0;
+  }
+  .piva {
+    width: 347px;
+  }
+}
+
+@media (max-width: 640px) {
+  .pivi {
+    font-size: 27px;
+    line-height: 34px;
+    width: 302px;
+    margin: 0 auto;
+  }
+  .lib {
+    width: 260px;
+    margin: 0 auto;
+    top: 0;
+  }
+  .piva {
+    width: 347px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sub {
+    padding: 4px 7px;
+  }
+}
+
+@media (max-width: 500px) {
+  .backtop {
+    width: 360px;
+  }
+
+  .backtop-text {
+    padding: 270px 16px 245px;
+    width: 365px;
+    font-size: 39px;
+  }
+
+  .eye {
+    width: 108px;
+    margin: 0 auto;
+  }
+
+  .mult-bro {
+    width: 360px;
+  }
+
+  .baik {
+    padding: 271px 35px 273px;
+  }
+
+  .multi {
+    width: 288px;
+    font-size: 39px;
+  }
+
+  .pad {
+    width: 108px;
+    margin: 0 auto;
+  }
+
+  .open {
+    width: 360px;
+  }
+
+  .compas {
+    width: 108px;
+    margin: 0 auto;
+  }
+
+  .open-menu {
+    padding: 272px 81px 273px;
+  }
+
+  .comp {
+    font-size: 30px;
+    line-height: 59px;
+  }
+}
