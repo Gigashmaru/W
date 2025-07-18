@@ -11,8 +11,8 @@ body {
   font-family: "Orbitron", sans-serif;
   background-image: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.88) 50%,
-    rgba(87, 184, 255, 1) 50%
+    var(--bg-dark) 50%,
+    var(--bg-blue) 50%
   );
 }
 
@@ -24,22 +24,63 @@ body {
   --text-grey: rgba(153, 153, 153, 1);
 }
 
-header {
+.skip {
+  /* background-image: linear-gradient(
+    to right,
+    var(--bg-blue) 50%,
+    var(--bg-dark) 50%
+  ); */
+  --bg-dark: rgba(87, 184, 255, 1);
+  --bg-blue: rgba(0, 0, 0, 0.88);
+  --text-yellow: rgba(153, 153, 153, 1);
+  --text-grey: rgba(250, 196, 34, 1);
+}
+
+/* .skip .fire-span {
+  --bg-blue: rgba(87, 184, 255, 1);
+  color: black;
+} */
+
+.skip .text-btn1 {
+  background-color: black;
+}
+
+.skip .text-p {
+  color: yellow;
+}
+
+/* body .dark{
   background-image: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.88) 50%,
     rgba(87, 184, 255, 1) 50%
   );
+} */
+
+header {
+  /* background-image: linear-gradient(
+    to right,
+    var(--bg-dark) 50%,
+    var(--bg-blue) 50%
+  ); */
   padding: 20px 0px;
 }
 
 /* .dark header {
   background-image: linear-gradient(
     to right,
-    rgba(87, 184, 255, 1) 50%,
-    rgba(0, 0, 0, 0.88) 50%
+    var(--bg-blue) 50%,
+    var(--bg-dark) 50%
   );
   padding: 20px 0px;
+} */
+
+/* .dark .text-games {
+  background-image: linear-gradient(
+    to right,
+    var(--bg-blue) 50%,
+    var(--bg-dark) 50%
+  );
 } */
 
 .container {
@@ -94,7 +135,7 @@ nav {
 }
 
 .nav-menu__link:hover {
-  color: rgba(250, 196, 34, 1);
+  color: var(--text-yellow);
 }
 
 .nav-btn__link {
@@ -109,11 +150,11 @@ nav {
 
 /* text-games */
 .text-games {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.88) 50%,
-    rgba(87, 184, 255, 1) 50%
-  );
+    var(--bg-dark) 50%,
+    var(--bg-blue) 50%
+  ); */
   padding: 200px 0;
 }
 
@@ -252,6 +293,14 @@ nav {
   gap: 32px;
 }
 
+.hover {
+  transition: 0.5s;
+}
+
+.hover:hover {
+  margin: 10px;
+}
+
 .conti {
   max-width: 1360px;
   background-color: var(--bg-dark);
@@ -353,7 +402,7 @@ nav {
   margin-bottom: 32px;
   transition: 0.7s;
 }
-baik .logo-menu-lkn:hover {
+.logo-menu-lkn:hover {
   padding: 55px;
 }
 
@@ -861,6 +910,8 @@ baik .logo-menu-lkn:hover {
   }
   .brandtext {
     text-align: center;
+    width: 200px;
+    margin: 0 auto;
   }
   .game-brand {
     justify-content: center;
@@ -974,7 +1025,7 @@ baik .logo-menu-lkn:hover {
     line-height: 23px;
   }
   .spon-p {
-    width: 275px;
+    width: 259px;
     font-size: 10px;
     line-height: 10px;
   }
@@ -1024,9 +1075,12 @@ baik .logo-menu-lkn:hover {
 
 @media (max-width: 380px) {
   .spon-h1 {
-    width: 275px;
-    font-size: 18px;
-    line-height: 21px;
+    width: 254px;
+    font-size: 17px;
+    line-height: 19px;
+  }
+  .gamep {
+    width: 360px;
   }
 }
 
@@ -1097,6 +1151,19 @@ baik .logo-menu-lkn:hover {
     font-size: 7px;
     line-height: 12px;
     text-align: center;
+  }
+}
+
+@media (max-width: 370px) {
+  .gamep {
+    width: 313px;
+  }
+  .brand-a {
+    font-size: 55px;
+    line-height: 69px;
+  }
+  .backtop {
+    width: 292px;
   }
 }
 
@@ -1190,5 +1257,78 @@ baik .logo-menu-lkn:hover {
   .comp {
     font-size: 30px;
     line-height: 59px;
+  }
+}
+@media (max-width: 370px) {
+  .backtop {
+    width: 292px;
+  }
+  .eye {
+    width: 87px;
+    margin: 0 auto;
+  }
+  .backtop-p {
+    width: 260px;
+    font-size: 35px;
+    line-height: 52px;
+    padding: 0 auto;
+  }
+  .mult-bro {
+    width: 292px;
+  }
+  .pad {
+    width: 87px;
+    margin: 0 auto;
+  }
+  .multi {
+    width: 223px;
+    font-size: 35px;
+    line-height: 52px;
+    padding: 0 auto;
+  }
+  .open {
+    width: 292px;
+  }
+  .compas {
+    width: 87px;
+    margin: 0 auto;
+  }
+  .comp {
+    font-size: 20px;
+    line-height: 49px;
+  }
+  .gamegrop {
+    width: 240px;
+    margin: 0 auto;
+  }
+  .will {
+    width: 240px;
+    margin: 0 auto;
+  }
+  .hon {
+    width: 240px;
+    margin: 0 auto;
+  }
+  .lap {
+    width: 240px;
+    margin: 0 auto;
+  }
+  .zavod-piva {
+    width: 294px;
+    font-size: 7px;
+    line-height: 22px;
+  }
+  .zavod-piva2 {
+    width: 306px;
+    font-size: 6px;
+    line-height: 10px;
+    text-align: center;
+  }
+  .new {
+    width: 117%;
+  }
+  .text-btn1 {
+    font-size: 16px;
+    line-height: 14px;
   }
 }
