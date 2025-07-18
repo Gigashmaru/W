@@ -32,8 +32,8 @@ body {
   ); */
   --bg-dark: rgba(87, 184, 255, 1);
   --bg-blue: rgba(0, 0, 0, 0.88);
-  --text-yellow: rgba(153, 153, 153, 1);
-  --text-grey: rgba(250, 196, 34, 1);
+  /* --text-yellow: rgba(153, 153, 153, 1);
+  --text-grey: rgba(250, 196, 34, 1); */
 }
 
 /* .skip .fire-span {
